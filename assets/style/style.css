@@ -51,7 +51,7 @@ nav ul.nav-menu li a:hover{
 }
 
 .jumbotron{
-    background-color: #FFFFFF;
+    background-color: rgb(108, 108, 199);
     padding: 20px 0;
 }
 
@@ -144,7 +144,7 @@ section form{
 
 section form .form-control{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
 }
 
 section form .form-control{
@@ -156,7 +156,10 @@ section form .form-control span{
     font-size: 14px;
     width: 80px;
 }
-
+section form .chek{
+    display: flex;
+    justify-content: center;
+}
 section form .form-control input{
     border: 1px solid #AAAAAA;
     border-radius: 5px;
@@ -168,12 +171,18 @@ section form .form-control button{
     border: none;
     border-radius: 8px;
     color: #FFFFFF;
-    background-color: gray;
+    background-color: rgb(62, 74, 184);
     padding: 5px 15px;
 }
 
 section form .form-control.button{
-    float: right;
+    display: flex;
+    justify-content: center;
+}
+section form .form-control button:hover{
+    color: rgb(12, 20, 143) ;
+    opacity: .5s;
+
 }
 
 /* Footer */
@@ -195,9 +204,11 @@ footer article{
 footer article h3{
     color: #FFF;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 25px;
 }
 footer article ul{
-    padding: 10px;
+    padding: 2px;
+    
 }
 
 footer article ul li {
