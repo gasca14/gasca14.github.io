@@ -23,7 +23,7 @@ nav a.nav-title{
 }
 
 nav a.nav-title:hover{
-    color: #AAAAAA;
+    color: #98afb6;
 }
 
 nav ul.nav-menu{
@@ -33,6 +33,7 @@ nav ul.nav-menu{
     text-align: right;
     vertical-align: top;
     width: 59%;
+
 }
 
 nav ul li{
@@ -47,11 +48,11 @@ nav ul li a{
 }
 
 nav ul.nav-menu li a:hover{
-    color: #AAAAAA;
+    color: #42cfda;
 }
 
 .jumbotron{
-    background-color: rgb(108, 108, 199);
+    background-color: rgb(62, 74, 184);
     padding: 20px 0;
 }
 
@@ -222,7 +223,7 @@ footer article ul li a{
     font-family: Arial, Helvetica, sans-serif;
 }
 footer article ul li a:hover{
-    color: aqua;
+    color: #42cfda;
     transition: 0.5s;
 }
 
@@ -234,29 +235,7 @@ footer article ul li a:hover{
     text-align: center;    
 }
 
-
-@media only screen and (max-width: 1000px){
-    section article{
-        min-width: 150px;
-    }
-}
-
-@media only screen and (max-width: 800px){
-    section{
-        display: flex;
-        flex-direction: column;
-    }
-
-    section article{
-        min-width: 100%;
-        padding: 10px 0;
-    }
-
-    section article p{
-        text-align: center;
-    }
-}
-
+    
 div .boton-red a{
     gap: 8px;
     margin-left: 35px;
@@ -292,4 +271,25 @@ div .boton-e:nth-child(3):hover{
 }
 div .boton-e:nth-child(4):hover{
     color: red;
+}
+   
+@media screen and (max-width: 800px){
+    section{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    section article{
+        width: 80%;
+        
+    }
+
+    section article p{
+        text-align: center;
+    }
+    div nav .nav-menu{
+        display: flex;
+        flex-direction: row;
+    
+    }
 }
