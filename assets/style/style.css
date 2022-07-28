@@ -139,8 +139,8 @@ section form{
     background-color: rgb(86, 116, 161);
     border-radius: 15px;
     display: flex;
-    padding: 10px;
     flex-direction: column;
+    padding: 10px;
 }
 
 section form .form-control{
@@ -216,6 +216,7 @@ section form .form-control button:hover{
     transition: 0.5s;
     
 }
+
 /* redes sociales */
 .red-social ul li a{
     display: flex;
@@ -228,7 +229,6 @@ section form .form-control button:hover{
 }
 div .boton-e:hover{
     transition: 0.5s;
-    color: #EEEEEE;
 }
 
 div .boton-e p{
@@ -241,7 +241,6 @@ div .boton-e:hover p{
     
 }
 
-
 /* copyright */
 .pie-pagina .derechos{
     padding-top: 255px;
@@ -251,6 +250,12 @@ div .boton-e:hover p{
 
 
 /* media query */
+@media screen and(max-width: 1200px) {
+    .pie-pagina{
+        width: 100%;
+    }
+    
+}
 @media screen and (max-width: 800px){
     section{
         display: grid;
