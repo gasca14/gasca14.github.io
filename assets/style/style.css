@@ -185,69 +185,50 @@ section form .form-control button:hover{
     opacity: .5s;
 
 }
-
-/* Footer */
-
-footer{
+/* footer */
+.pie-pagina{
+    width: 100%;
     background-color: black;
+    color: #EEEEEE;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 25px;
-    padding: 10px ;
-
+    border-radius: 2px;
 }
-
-footer article{
+.pie-pagina h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    margin-top: 25px;
+    padding: 10px;
 }
-
-footer article h3{
-    color: #FFF;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 25px;
-}
-footer article ul{
-    padding: 2px;
-    
-}
-
-footer article ul li {
+.pie-pagina ul li{
     list-style: none;
-    padding: 5px;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-footer article ul li a{
+.pie-pagina ul li a{
+    color: white;
     text-decoration: none;
-    color: #FFF;
-    font-family: Arial, Helvetica, sans-serif;
 }
-footer article ul li a:hover{
+.pie-pagina ul li a:hover{
     color: #42cfda;
     transition: 0.5s;
-}
-
-.derechos{
-    background-color: black;
-    border-top: #AAAAAA 1px dotted;
-    color: #EEEEEE;
-    padding: 10px;
-    text-align: center;    
-}
-
     
-div .boton-red a{
-    gap: 8px;
-    margin-left: 35px;
-    padding: 10px;
-    text-decoration: none;
-    color: #FFFFFF;
+}
+/* redes sociales */
+.red-social ul li a{
     display: flex;
     flex-direction: row;
+    gap: 8px;
     
+}
+.red-social ul li{
+    margin-left: 10px;
 }
 div .boton-e:hover{
     transition: 0.5s;
+    color: #EEEEEE;
 }
 
 div .boton-e p{
@@ -260,19 +241,16 @@ div .boton-e:hover p{
     
 }
 
-div .boton-e:nth-child(1):hover{
-    color: #4267B2;
+
+/* copyright */
+.pie-pagina .derechos{
+    padding-top: 255px;
+    
 }
-div .boton-e:nth-child(2):hover{
-    color: #25D366;
-}
-div .boton-e:nth-child(3):hover{
-    color: #E1306C;
-}
-div .boton-e:nth-child(4):hover{
-    color: red;
-}
-   
+
+
+
+/* media query */
 @media screen and (max-width: 800px){
     section{
         display: grid;
@@ -281,7 +259,11 @@ div .boton-e:nth-child(4):hover{
 
     section article{
         width: 80%;
-        
+        margin-bottom: 15px;
+    }
+    section article img{
+        width: 160px;
+        margin-bottom: 15px
     }
 
     section article p{
@@ -292,4 +274,33 @@ div .boton-e:nth-child(4):hover{
         flex-direction: row;
     
     }
+    .pie-pagina{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .pie-pagina .derechos{
+     padding-top: 100px;
+     margin-left: 150px;
+    
+    }
+    .red-social ul li{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width: 480px){
+    section{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    section article{
+        width: 100%;
+    }
+    .pie-pagina{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .red-social ul li{
+        padding-left: 65px;
+    }    
 }
