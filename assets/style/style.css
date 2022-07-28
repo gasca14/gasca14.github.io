@@ -241,6 +241,7 @@ div .boton-e:hover p{
     
 }
 
+
 /* copyright */
 .pie-pagina .derechos{
     padding-top: 255px;
@@ -250,12 +251,13 @@ div .boton-e:hover p{
 
 
 /* media query */
-@media screen and(max-width: 1200px) {
+/* @media screen and(max-width: 1200px) {
     .pie-pagina{
-        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
     
-}
+} */
 @media screen and (max-width: 800px){
     section{
         display: grid;
@@ -298,14 +300,5 @@ div .boton-e:hover p{
         display: grid;
         grid-template-columns: auto;
     }
-    section article{
-        width: 100%;
-    }
-    .pie-pagina{
-        display: grid;
-        grid-template-columns: auto;
-    }
-    .red-social ul li{
-        padding-left: 65px;
-    }    
+
 }
