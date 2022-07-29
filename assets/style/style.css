@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+    
 
 }
 
@@ -12,28 +14,17 @@ body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px 10px; 
-    height: 45px;
+    height: 55px;
 }
 
-nav a.nav-title{
-    color: white;
-    display: inline-block;
-    font-size: 24px;
-    text-decoration: none;
-    width: 40%;
-}
 
-nav a.nav-title:hover{
-    color: #98afb6;
-}
 
 .menu .nav-menu{
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     list-style: none;
     margin-top: 5px;
-    text-align: right;
-    vertical-align: top;
-    width: 59%;
+    
 
 }
 
@@ -100,13 +91,13 @@ nav ul.nav-menu li a:hover{
 
 section{
     display: flex;
-    margin: auto;
-    max-width: 90%;
+    justify-content: space-between;
+    margin: 10px;
     padding: 25px ;
 }
 
 section article{
-    background-color: #a2cad4;
+    background-color: #9baeb3;
     border-radius: 5px;
     margin: 0 10px;
     text-align: center;
@@ -219,14 +210,16 @@ section form .form-control button:hover{
 }
 
 /* redes sociales */
-.red-social ul li a{
+.red-social a{
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
     
 }
-.red-social ul li{
-    margin-left: 10px;
+.red-social p{
+    margin-left: 5px;
 }
 div .boton-e:hover{
     transition: 0.5s;
@@ -241,27 +234,23 @@ div .boton-e:hover p{
     display: block;
     
 }
-.red-social .boton-e:nth-child(1):hover{
-    color: blue;
+.boton-e:nth-child(1):hover{
+    color: #4267B2;
 }
-.red-social .boton-c:nth-child(2):hover{
-    color: rgb(240, 22, 94);
+.boton-e:nth-child(2):hover{
+    color: #25D366;
 }
+.boton-e:nth-child(3):hover{
+    color: #E1306C;
+}
+
+
 /* copyright */
 .derechos{
     padding-top: 200px;
 }
 
 
-
-/* media query */
-/* @media screen and(max-width: 1200px) {
-    .pie-pagina{
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    
-} */
 @media screen and (max-width: 800px){
     section{
         display: grid;
@@ -304,17 +293,5 @@ div .boton-e:hover p{
         display: grid;
         grid-template-columns: auto;
     }
-    .menu{
-        height: 68px;
-    }
-    .nav-title{
-        float: left;
-    }
-    nav ul li{
-        display: inline;
-        padding: 3px;
-    }
-    .pie-pagina{
-        overflow: hidden;
-    }
+
 }
