@@ -8,10 +8,11 @@ body{
     background-color: lightgray;
 }
 
-nav{
+.menu{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 10px;
+    padding: 5px 10px; 
+    height: 45px;
 }
 
 nav a.nav-title{
@@ -26,7 +27,7 @@ nav a.nav-title:hover{
     color: #98afb6;
 }
 
-nav ul.nav-menu{
+.menu .nav-menu{
     display: inline-block;
     list-style: none;
     margin-top: 5px;
@@ -53,7 +54,7 @@ nav ul.nav-menu li a:hover{
 
 .jumbotron{
     background-color: rgb(62, 74, 184);
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .jumbotron .container{
@@ -101,11 +102,11 @@ section{
     display: flex;
     margin: auto;
     max-width: 90%;
-    padding: 15px ;
+    padding: 25px ;
 }
 
 section article{
-    background-color: #EEEEEE;
+    background-color: #a2cad4;
     border-radius: 5px;
     margin: 0 10px;
     text-align: center;
@@ -198,7 +199,7 @@ section form .form-control button:hover{
 .pie-pagina h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 2px;
     padding: 10px;
 }
 .pie-pagina ul li{
@@ -212,7 +213,7 @@ section form .form-control button:hover{
     text-decoration: none;
 }
 .pie-pagina ul li a:hover{
-    color: #eb0e2b;
+    color: #30caca;
     transition: 0.5s;
     
 }
@@ -240,12 +241,15 @@ div .boton-e:hover p{
     display: block;
     
 }
-
-
+.red-social .boton-e:nth-child(1):hover{
+    color: blue;
+}
+.red-social .boton-c:nth-child(2):hover{
+    color: rgb(240, 22, 94);
+}
 /* copyright */
-.pie-pagina .derechos{
-    padding-top: 255px;
-    
+.derechos{
+    padding-top: 200px;
 }
 
 
@@ -300,5 +304,17 @@ div .boton-e:hover p{
         display: grid;
         grid-template-columns: auto;
     }
-
+    .menu{
+        height: 68px;
+    }
+    .nav-title{
+        float: left;
+    }
+    nav ul li{
+        display: inline;
+        padding: 3px;
+    }
+    .pie-pagina{
+        overflow: hidden;
+    }
 }
