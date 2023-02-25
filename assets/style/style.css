@@ -37,6 +37,8 @@ nav ul li a{
     color: white;
     font-weight: bold;
     text-decoration: none;
+    border: #25bfd3 solid;
+    border-radius: 4px;
 }
 
 nav ul.nav-menu li a:hover{
