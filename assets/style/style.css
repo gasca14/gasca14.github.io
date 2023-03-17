@@ -37,16 +37,16 @@ nav ul li a{
     color: white;
     font-weight: bold;
     text-decoration: none;
-    border: #25bfd3 solid;
+    border: #4A5899 solid;
     border-radius: 4px;
 }
 
 nav ul.nav-menu li a:hover{
-    color: #42cfda;
+    color: #642f57;
 }
 
 .jumbotron{
-    background-color: rgb(62, 74, 184);
+    background-color: #4A5899;
     padding: 20px;
 }
 
@@ -130,7 +130,7 @@ section.formulario{
     justify-content: center;
 }
 section form{
-    background-color: rgb(86, 116, 161);
+    background-color: #4A5899;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
