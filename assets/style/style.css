@@ -7,13 +7,13 @@
 }
 
 body{
-    background-color: lightgray;
+    background-color: lightcyan;
 }
 
 .menu{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 5px 10px; 
+    padding: 5px 15px; 
     height: 55px;
 }
 
@@ -29,20 +29,24 @@ body{
 }
 
 nav ul li{
-    display: inline;
-    padding: 0 5px;
+    /* display: inline; */
+    padding: 7px 8px;
 }
 
 nav ul li a{
     color: white;
     font-weight: bold;
+    font-size: 18px;
+    padding: 4px 8px;
     text-decoration: none;
-    border: #4A5899 solid;
-    border-radius: 4px;
+    border: #4A5899 solid 3px;
+    border-radius: 10px;
 }
 
 nav ul.nav-menu li a:hover{
+    background-color: white;
     color: #642f57;
+    transition: .4s;
 }
 
 .jumbotron{
@@ -54,7 +58,9 @@ nav ul.nav-menu li a:hover{
     text-align: center;
     width: 80%;
 }
-
+.jumbo-image img{
+    border-radius: 10px;
+}
 .jumbotron .container .jumbo-image,
 .jumbotron .container .jumbo-text{
     display: inline-block;
@@ -99,12 +105,12 @@ section{
 }
 
 section article{
-    background-color: #9baeb3;
+    background-color: #96b8c0;
     border-radius: 5px;
-    margin: 0 10px;
+    margin: 4px 12px;
     text-align: center;
     overflow: hidden;
-    max-width: 1000spx;
+    max-width: 500px;
 }
 
 section article img{
@@ -138,7 +144,7 @@ section form{
 }
 
 section form .form-control{
-    display: flex;
+    display: flex;   
     justify-content: center;
 }
 
@@ -163,10 +169,9 @@ section form .form-control input{
 }
 
 section form .form-control button{
-    border: none;
+    border: solid blue 2px;
     border-radius: 8px;
-    color: #FFFFFF;
-    background-color: rgb(62, 74, 184);
+    background-color:white;
     padding: 5px 15px;
 }
 
@@ -175,8 +180,9 @@ section form .form-control.button{
     justify-content: center;
 }
 section form .form-control button:hover{
-    color: rgb(12, 20, 143) ;
-    opacity: .5s;
+    background-color: blue;
+    color: white ;
+    transition: .5s;
 
 }
 /* footer */
@@ -187,7 +193,7 @@ section form .form-control button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-radius: 2px;
+    /* border-radius: 2px; */
 }
 .pie-pagina h3{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -252,7 +258,7 @@ div .boton-e:hover p{
     padding-top: 200px;
 }
 
-
+/* media queryes para que se adapte a dispositivos moviles en diferentes resoluciones */
 @media screen and (max-width: 800px){
     section{
         display: grid;
